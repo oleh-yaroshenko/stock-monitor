@@ -1,0 +1,176 @@
+/* general styles */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+::selection {
+    background-color: rgba(162, 132, 94, 0.4);
+}
+
+/* general styles */
+
+/* navigation styles */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a2845e;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.selection a {
+    background-color: #a2845e;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* navigation styles */
+
+/* home view */
+
+.home .middle {
+    font-style: italic;
+    color: #a2845e;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.home .first,
+.home .second {
+    display: flex;
+    align-items: center;
+}
+
+.home .first img,
+.home .second img {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.home .first p {
+    padding-right: 20px;
+}
+
+.home .second p {
+    padding-left: 20px;
+}
+
+/* home view */
+
+/* list view */
+
+.companies a {
+    color: #a2845e;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.companies a:hover {
+    color: black;
+    background-color: #a2845e;
+}
+
+.companies span {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin-left: 5px;
+    color: #a2845e;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.companies ol {
+    counter-reset: my-counter;
+}
+
+.companies li {
+    counter-increment: my-counter;
+}
+
+.companies li::marker {
+    content: counter(my-counter);
+    font-weight: bold;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+}
+
+.article img {
+    width: 50%;
+    padding-left: 10px;
+}
+
+/* list view */
+
+/* about view */
+
+.about .middle {
+    padding: 10px;
+    border-radius: 10px;
+    color: #a2845e;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* about view */
+
+/* contact view */
+
+.contact .info a {
+    text-decoration: none;
+    color: #a2845e;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact .info a:hover {
+    color: black;
+    background-color: #a2845e;
+}
+
+.contact .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+/* contact view */
+
+/* footer view */
+
+footer {
+    background-color: #a2845e;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+/* footer view */
