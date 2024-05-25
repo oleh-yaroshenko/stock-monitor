@@ -5,10 +5,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0px;
 }
 
 main {
-    flex: 1;
+    flex-grow: 1;
+    margin: 0px 8px;
+}
+
+h1 {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 ::selection {
@@ -24,12 +31,14 @@ nav ul {
     list-style: none;
     justify-content: space-around;
     padding: 0px;
+    margin: 0px;
 }
 
 nav a {
     text-decoration: none;
     color: #a2845e;
     font-weight: bold;
+    padding-bottom: 2px;
     transition: 0.5s;
 }
 
@@ -38,10 +47,7 @@ nav a:hover {
 }
 
 .selection a {
-    background-color: #a2845e;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
+    color: black;
 }
 
 /* navigation styles */
@@ -90,14 +96,12 @@ nav a:hover {
 
 .companies a:hover {
     color: black;
-    background-color: #a2845e;
 }
 
 .companies span {
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     margin-left: 5px;
-    color: #a2845e;
+    color: #000000;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -121,22 +125,11 @@ nav a:hover {
 }
 
 .article img {
-    width: 50%;
+    width: 30%;
     padding-left: 10px;
 }
 
 /* list view */
-
-/* about view */
-
-.about .middle {
-    padding: 10px;
-    border-radius: 10px;
-    color: #a2845e;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* about view */
 
 /* contact view */
 
@@ -144,7 +137,6 @@ nav a:hover {
     text-decoration: none;
     color: #a2845e;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     border-radius: 10px;
     transition: 0.5s;
@@ -152,7 +144,6 @@ nav a:hover {
 
 .contact .info a:hover {
     color: black;
-    background-color: #a2845e;
 }
 
 .contact .info {
@@ -169,8 +160,6 @@ footer {
     background-color: #a2845e;
     color: white;
     padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0px;
 }
 
 /* footer view */
