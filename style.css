@@ -60,10 +60,12 @@ nav a:hover {
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.2);
+    text-align: justify;
 }
 
 .home .first,
 .home .second {
+    text-align: justify;
     display: flex;
     align-items: center;
 }
@@ -85,6 +87,10 @@ nav a:hover {
 /* home view */
 
 /* list view */
+
+.list p:first-child {
+    text-align: justify;
+}
 
 .companies a {
     color: #a2845e;
@@ -122,6 +128,7 @@ nav a:hover {
 .article {
     display: flex;
     align-items: center;
+    text-align: justify;
 }
 
 .article img {
@@ -160,6 +167,7 @@ footer {
     background-color: #a2845e;
     color: white;
     padding: 10px;
+    margin-top: 10px;
 }
 
 /* footer view */
